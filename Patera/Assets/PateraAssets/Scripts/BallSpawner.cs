@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class BallSpawner : MonoBehaviour
 {
-    GameObject ballPrefab;
+    public GameObject ballPrefab;
     private GameObject ball;
-    Transform ballSpawner;
+    public Transform ballSpawner;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
