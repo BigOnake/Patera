@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
             currentRound++;
         currentFrame++;
 
-        int minScore = currentRound * currentFrame * 1;
+        minScore = currentRound * currentFrame * 1;
         score = 0;
 
         ps.DestroyPins();
