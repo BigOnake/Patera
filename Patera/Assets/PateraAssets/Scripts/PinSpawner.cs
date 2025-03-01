@@ -5,20 +5,17 @@ using UnityEngine;
 public class PinSpawner : MonoBehaviour
 {
     public static PinSpawner Instance;
-    public List<GameObject> pin;
-
-    int basePinAmount;
-    int currentRound = 1;
-
+    public List<GameObject> pinPreFab;
+    public GameObject pins;
     public Transform spawn;
 
-    private void Awake()
+    public void SpawnPins()
     {
-        Instance = this;
+        pins = Instantiate(pinPreFab[GameManager.currentFrame - 1], spawn.transform.position, spawn.transform.rotation, null);
     }
 
-    public void SpawnPins(int currentRound)
+    public void DestroyPins()
     {
-        Instantiate(pin[currentRound], pin[currentRound].transform.position, pin[currentRound].transform.rotation, null);
+        Destroy(pins);
     }
 }

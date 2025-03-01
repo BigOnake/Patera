@@ -5,19 +5,17 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public static int currentFrame = 1;
     public static int currentRound = 1;
-    int numThrows = 3;
+    public static int numThrows = 4;
     public static int score = 0;
-    int minScore = currentRound * currentFrame * 100;
+    int minScore = currentRound * currentFrame * 1;
 
-    bool winFrame = false;
+    public PinSpawner ps;
 
-    private PinSpawner ps;
-
-    private void Awake()
+    void Awake()
     {
         Instance = this;
 
-        PinSpawner.Instance.SpawnPins(currentRound);
+        ps.SpawnPins();
     }
 
     void Update()
@@ -27,28 +25,40 @@ public class GameManager : MonoBehaviour
         {
             if (score >= minScore)
             {
-                winFrame = true;
                 ContinueGame();
+            }
+            else
+            {
+                LoseGame();
             }
         }
     }
 
-    private void ContinueGame()
+    void ContinueGame()
     {
-        winFrame = false;
-        numThrows = 3;
+        numThrows = 4;
 
-        if (currentFrame % 4 == 0)
+        if (currentFrame % 2 == 0)
             currentRound++;
         currentFrame++;
 
-        int minScore = currentRound * currentFrame * 100;
+        int minScore = currentRound * currentFrame * 1;
         score = 0;
+
+        ps.DestroyPins();
+        ps.SpawnPins();
     }
 
-    void FixedUpdate()
+    void LoseGame()
     {
-        // Calculate if it was a valid throw
-        // Check to see score
+        numThrows = 4;
+        currentFrame = 1;
+        currentRound = 1;
+
+        score = 0;
+        int minScore = currentRound * currentFrame * 1;
+
+        ps.DestroyPins();
+        ps.SpawnPins();
     }
 }
