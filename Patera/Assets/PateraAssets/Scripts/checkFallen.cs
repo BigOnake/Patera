@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class checkFallen : MonoBehaviour
 {
-    public float tippingForwardThreshold = 85.0f;
-    public float tippingBackwardThreshold = 275.0f;
+    public float tippingThreshold = 15.0f;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,13 +12,14 @@ public class checkFallen : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        Debug.Log($"{GameManager.score}");
-        if(gameObject.transform.position.z >= tippingForwardThreshold || gameObject.transform.position.z >= tippingBackwardThreshold)
+    {   
+        Rigidbody rb = GetComponent<Rigidbody>();
+        float angle = Vector3.Angle(rb.transform.up, Vector3.up);
+        if(angle > tippingThreshold)
         {
             GameManager.score += 1;
             Debug.Log($"Scored Pin {GameManager.score}");
-            Destroy(this);
+            Destroy(gameObject);
         }
      }
 }
