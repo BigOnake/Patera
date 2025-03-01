@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 101621917521043085}
   - component: {fileID: 2776696120960669084}
   - component: {fileID: 6553919081973143371}
-  - component: {fileID: 3400960240028167966}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -97,7 +96,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655150613262749984}
-  m_Material: {fileID: 13400000, guid: 10bde48ef542d6a4fbee12145283824a, type: 2}
+  m_Material: {fileID: 13400000, guid: 90e847597b055a54d98a68e583c41f55, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -210,7 +209,7 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 8478567328790258458}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
@@ -219,9 +218,9 @@ MonoBehaviour:
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
   m_MovementType: 0
-  m_VelocityDamping: 0.497
+  m_VelocityDamping: 1
   m_VelocityScale: 1
-  m_AngularVelocityDamping: 0.517
+  m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
   m_SmoothPosition: 0
@@ -241,27 +240,27 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.0073547363
-      value: 0.99905396
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
+      time: 0
+      value: 1
+      inSlope: -0.99017006
+      outSlope: -0.99017006
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.9828491
-      value: 0.019794464
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
+      time: 1.0023804
+      value: 0.007472992
+      inSlope: -0.99017006
+      outSlope: -0.99017006
+      tangentMode: 34
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.33333334
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 2.19
+  m_ThrowVelocityScale: 10
   m_ThrowAngularVelocityScale: 1.5
   m_ForceGravityOnDetach: 1
   m_RetainTransformParent: 1
@@ -269,16 +268,3 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 1
---- !u!114 &3400960240028167966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655150613262749984}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9197a25f9259df948a9ec61a51b88dee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dragFactor: -3.28
