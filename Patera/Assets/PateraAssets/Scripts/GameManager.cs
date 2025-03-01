@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
         currentRound = 1;
 
         score = 0;
-        int minScore = currentRound * currentFrame * 1;
+        minScore = currentRound * currentFrame * 1;
 
         ps.DestroyPins();
         ps.SpawnPins();

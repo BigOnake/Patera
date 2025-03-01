@@ -12,7 +12,6 @@ public class checkFallen : MonoBehaviour
         if(angle > tippingThreshold)
         {
             GameManager.score += 1;
-            Debug.Log($"Scored Pin {GameManager.score}");
             Destroy(gameObject);
         }
      }

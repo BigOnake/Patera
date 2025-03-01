@@ -184,6 +184,10 @@ PrefabInstance:
       propertyPath: m_ExcludeLayers.m_Bits
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4175481453973152615, guid: 88a9618acb3f3b8428cd03da482345f2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4175896469820008252, guid: 88a9618acb3f3b8428cd03da482345f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.25
@@ -228,10 +232,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: BowlingAlley
       objectReference: {fileID: 0}
+    - target: {fileID: 6761247649206041091, guid: 88a9618acb3f3b8428cd03da482345f2, type: 3}
+      propertyPath: gameObj
+      value: 
+      objectReference: {fileID: 655150613262749984, guid: adb5bb8676eb47f4a85f2fa275d7e589, type: 3}
     - target: {fileID: 8092139227051109945, guid: 88a9618acb3f3b8428cd03da482345f2, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: 90e847597b055a54d98a68e583c41f55, type: 2}
+    - target: {fileID: 8322006918715091649, guid: 88a9618acb3f3b8428cd03da482345f2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 8322006918715091649, guid: 88a9618acb3f3b8428cd03da482345f2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.11
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1855630132597521564, guid: 88a9618acb3f3b8428cd03da482345f2, type: 3}
     m_RemovedGameObjects: []
@@ -406,7 +422,7 @@ Transform:
   m_GameObject: {fileID: 323478370}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.877, y: 1.568, z: -9.357}
+  m_LocalPosition: {x: -3.646, y: 2.194, z: -9.831}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
