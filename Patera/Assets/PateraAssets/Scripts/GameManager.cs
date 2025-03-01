@@ -38,9 +38,12 @@ public class GameManager : MonoBehaviour
         winFrame = false;
         numThrows = 3;
 
-        if (currentFrame == 2)
+        if (currentFrame % 4 == 0)
             currentRound++;
-            currentFrame = 1;
+        currentFrame++;
+
+        int minScore = currentRound * currentFrame * 100;
+        score = 0;
     }
 
     void FixedUpdate()
