@@ -17,7 +17,7 @@ public class PinSpawner : MonoBehaviour
         Instance = this;
     }
 
-    public void SpawnPins(int)
+    public void SpawnPins(int currentRound)
     {
         Instantiate(pin[currentRound], pin[currentRound].transform.position, pin[currentRound].transform.rotation, null);
     }

@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     public static int currentFrame = 1;
     public static int currentRound = 1;
     int numThrows = 3;
-    int score = 0;
+    public static int score = 0;
     int minScore = currentRound * currentFrame * 100;
 
     bool winFrame = false;
