@@ -8,6 +8,7 @@ public class PinSpawner : MonoBehaviour
     public List<GameObject> pin;
 
     int basePinAmount;
+    int currentRound = 1;
 
     public Transform spawn;
 
@@ -16,7 +17,7 @@ public class PinSpawner : MonoBehaviour
         Instance = this;
     }
 
-    public void SpawnPins(int currentRound)
+    public void SpawnPins(int)
     {
         Instantiate(pin[currentRound], pin[currentRound].transform.position, pin[currentRound].transform.rotation, null);
     }
