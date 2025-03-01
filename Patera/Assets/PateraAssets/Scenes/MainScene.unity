@@ -426,9 +426,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transform: {fileID: 616353280}
-  xAxis: 3
-  yAxis: 2
-  zAxis: 1
+  xAxis: 1.2
+  yAxis: 1.03
+  zAxis: 1.5
 --- !u!1 &922439492 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3979042720661238852, guid: 88a9618acb3f3b8428cd03da482345f2, type: 3}
