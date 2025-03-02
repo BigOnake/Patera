@@ -9,9 +9,10 @@ public class checkFallen : MonoBehaviour
     {   
         Rigidbody rb = GetComponent<Rigidbody>();
         float angle = Vector3.Angle(rb.transform.up, Vector3.up);
+        
         if(angle > tippingThreshold)
         {
-            GameManager.score += 1;
+            GameManager.score += 10;
             Destroy(gameObject);
         }
      }

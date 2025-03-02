@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ScoreUiUpdate : MonoBehaviour
 {
-    int currentScore;
+    public static int currentScore;
     public TextMeshProUGUI text;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,5 +19,10 @@ public class ScoreUiUpdate : MonoBehaviour
             currentScore = GameManager.score;
             text.text = currentScore.ToString();
         }
+    }
+
+    void Clear()
+    {
+        text.text = currentScore.ToString();
     }
 }

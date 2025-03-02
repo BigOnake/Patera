@@ -3,11 +3,10 @@ using UnityEngine;
 public class Trigger : MonoBehaviour
 {
     public GameObject gameObj;
-    private static bool isPlayed;
 
     void Start()
     {
-        isPlayed = true;
+        GameManager.isPlayed = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -15,15 +14,16 @@ public class Trigger : MonoBehaviour
         if(other.gameObject.tag == "Ball")
         {
             Debug.Log("Recognized Ball");
-
-            if(isPlayed)
-            isPlayed = false;
+            if (GameManager.isPlayed)
+            {
+                GameManager.isPlayed = false;
+                GameManager.numThrows--;
+            }
             else
-            isPlayed = true;
-
-            Debug.Log(isPlayed.ToString());
+            {
+                GameManager.isPlayed = true;
+            }
+            Debug.Log(GameManager.isPlayed.ToString());
         }
-        
-        GameManager.numThrows--;
     }
 }
