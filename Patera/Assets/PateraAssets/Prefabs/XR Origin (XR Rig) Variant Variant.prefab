@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 1.43
       objectReference: {fileID: 0}
+    - target: {fileID: 8179298238476611514, guid: 5b4f2f8ec797cde44857b709e5a48bf5, type: 3}
+      propertyPath: m_OriginBaseGameObject
+      value: 
+      objectReference: {fileID: 2218496723442559054, guid: d6878e1999eb4b44a9f5a263af86c185, type: 3}
     - target: {fileID: 8506800998020034104, guid: 5b4f2f8ec797cde44857b709e5a48bf5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
