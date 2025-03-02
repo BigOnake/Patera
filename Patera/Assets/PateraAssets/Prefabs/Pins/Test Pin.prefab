@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tippingThreshold: 60
+  soundFx: {fileID: 8300000, guid: aec2a574d12948d46b19d5534484a51f, type: 3}
 --- !u!1001 &8651589493436232857
 PrefabInstance:
   m_ObjectHideFlags: 0

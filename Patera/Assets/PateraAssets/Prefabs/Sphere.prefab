@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8478567328790258458}
   - component: {fileID: 6441476779362029021}
   - component: {fileID: 2611730962248696470}
-  - component: {fileID: 101621917521043085}
   - component: {fileID: 2776696120960669084}
   - component: {fileID: 6553919081973143371}
+  - component: {fileID: 3480430517167589728}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Ball
@@ -30,9 +30,9 @@ Transform:
   m_GameObject: {fileID: 655150613262749984}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.974, y: 0.77, z: 0}
-  m_LocalScale: {x: 0.32843184, y: 0.32843184, z: 0.32843184}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 1.974, y: 1.901, z: 0}
+  m_LocalScale: {x: 175, y: 175, z: 175}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -43,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655150613262749984}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 1062730958792506493, guid: ff5e3cd232fd1ff4bae84752a1c8f8ce, type: 3}
 --- !u!23 &2611730962248696470
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -67,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6691c89fc6fbbb44cb5af52391da7129, type: 2}
+  - {fileID: 2100000, guid: 8e34ad97dce3da846b539f499f3cc777, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -89,27 +89,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &101621917521043085
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655150613262749984}
-  m_Material: {fileID: 13400000, guid: 90e847597b055a54d98a68e583c41f55, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2776696120960669084
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -121,7 +100,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 5.49
-  m_CenterOfMass: {x: 0.13, y: 0, z: -0.14}
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0.016318103, w: 0.99986684}
   m_IncludeLayers:
@@ -268,3 +247,24 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 1
+--- !u!135 &3480430517167589728
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655150613262749984}
+  m_Material: {fileID: 13400000, guid: 90e847597b055a54d98a68e583c41f55, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.0008
+  m_Center: {x: 2.910383e-11, y: 5.820766e-11, z: -0.0000072565745}
